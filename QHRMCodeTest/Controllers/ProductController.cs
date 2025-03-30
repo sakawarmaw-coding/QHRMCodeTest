@@ -85,7 +85,7 @@ namespace QHRMCodeTest.Controllers
                                        SET [Name] = @Name
                                           ,[Description] = @Description
                                           ,[Price] = @Price
-                                          ,[CreatedDate] = GETDATE()
+                                          ,[ModifiedDate] = GETDATE()
                                      WHERE Id=@Id";
 
                     using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
